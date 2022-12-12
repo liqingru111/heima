@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>home页面</title>
+</head>
+<body>
+<h2>home页面</h2>
+<p>点击 <a th:href="@{/home}">这里</a> 去home页面</p>
+<p>点击 <a th:href="@{/admin}">这里</a> 去admin页面.</p>
+<p>点击 <a th:href="@{/user}">这里</a> 去user页面.</p>
+<p> <a th:href="@{/logout}">退出登录</a></p>
+</body>
+</html>

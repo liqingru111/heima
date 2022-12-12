@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>登录页面</title>
+</head>
+<body>
+<div th:if="${param.error}" style="color: red;">
+    Invalid username and password.
+</div>
+<div th:if="${param.logout}" style="color: red;">
+    You have been logged out.
+</div>
+<form th:action="@{/login}" method="post">
+    <div><label> User Name : <input type="text" name="username"/> </label></div>
+    <div><label> Password: <input type="password" name="password"/> </label></div>
+    <div><input id="remember_me" name="remember-me" type="checkbox"/>
+        <label for="remember_me" class="inline">Remember me</label></div>
+    <div><input type="submit" value="submit"/>
+        <input type="reset" value="reset"/></div>
+</form>
+<p>点击 <a th:href="@{/home}">这里</a> 去home页面.</p>
+</body>
+</html>

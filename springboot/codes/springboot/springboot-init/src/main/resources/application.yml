@@ -1,0 +1,14 @@
+name: aaa
+person:
+  name: zhangsan
+  age: 20
+  address:
+    - beijing
+    - shanghai
+address:
+  - beijing
+  - shanghai
+msg1: 123
+msg2: 333
+server:
+  port: 8082
