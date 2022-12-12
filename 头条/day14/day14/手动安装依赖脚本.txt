@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=D:\dockerfile-maven-plugin-1.3.6.jar -DgroupId=com.spotify -DartifactId=dockerfile-maven-plugin -Dversion=1.3.6 -Dpackaging=jar

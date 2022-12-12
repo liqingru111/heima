@@ -1,0 +1,10 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: springboot-es5
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.200.132:9300
+      cluster-name: elasticsearch  #默认值
+
